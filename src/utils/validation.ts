@@ -215,5 +215,9 @@ export const refundSchema = z.object({
       message: '1원 이상 입력해주세요.',
     }),
   bankId: z.coerce.number().min(1, '은행을 선택해주세요.'),
-  exchangeAccount: z.string().min(1, '계좌번호를 입력해주세요.'),
+  exchangeAccount: z
+    .string()
+    .regex(/^\d+$/, '계좌번호는 숫자만 입력해주세요.')
+    .min(10, '계좌번호는 최소 10자리 이상 입력해주세요.')
+    .max(12, '계좌번호는 최대 12자리까지 입력 가능합니다.'),
 })

@@ -19,11 +19,6 @@ const RefundAccountInput = () => {
         const onlyDigits = stripAccountNumber(field.value)
         const formatted = formatAccountNumber(onlyDigits)
 
-        const isShort = onlyDigits.length > 0 && onlyDigits.length < 10
-        const errorMessage =
-          errors.exchangeAccount?.message ||
-          (isShort ? '계좌번호는 최소 10자리 이상 13자리 미만으로 입력해주세요.' : '')
-
         return (
           <Input
             id="exchangeAccount"
@@ -37,8 +32,8 @@ const RefundAccountInput = () => {
                 if (errors.exchangeAccount) clearErrors('exchangeAccount')
               }
             }}
-            error={!!errorMessage}
-            errorMsg={errorMessage}
+            error={!!errors.exchangeAccount}
+            errorMsg={errors.exchangeAccount?.message}
             shape="square"
             inputMode="numeric"
           />

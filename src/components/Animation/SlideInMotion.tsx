@@ -73,7 +73,7 @@ const SlideInMotion = ({
           animate={{ x: 0 }}
           exit={{ x: exitX }}
           transition={{ type: 'tween', duration: 0.3 }}
-          className={`bg-gray-10 fixed top-0 left-0 z-50 flex h-full w-full flex-col overflow-hidden ${className}`}
+          className={`bg-gray-10 fixed top-0 left-0 z-[100] flex h-full w-full flex-col overflow-hidden ${className}`}
           style={{ touchAction: 'none' }}
         >
           <div className="absolute top-6.5 z-10 flex items-center gap-2 pl-4 text-gray-900">

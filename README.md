@@ -9,6 +9,12 @@
 
 서비스 운영에 필요한 컴포넌트 기반 구조, 반응형 UI, 상태 관리, 데이터 동기화, API 연동 등을 포함하고 있습니다.
 
+[🔗팀노션](https://www.notion.so/2-2225cc39b823809bac27fe909edc5433?source=copy_link)
+[🎨피그마](https://www.figma.com/design/uOdC1ZwphMsIq3XXCsRoBn/%EC%B5%9C%EC%A2%85-%EC%9C%B5%ED%95%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2%EC%A1%B0?)
+[🌐배포사이트](https://ureca-final.com/)
+[👨‍🏫시연영상](https://www.youtube.com/watch?v=Kzm0acL3VCY&t=9s)
+[🏛 조직 페이지](https://github.com/dat-ch-a)
+
 ---
 
 ## 💻 기술 스택
